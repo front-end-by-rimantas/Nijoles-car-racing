@@ -1,0 +1,94 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/background.webp);
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+.car {
+    display: inline-block;
+    width: 150px;
+    height: 80px;
+    background-image: url(../img/tesla.png);
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -200px;
+    /* transition: all 1s; */
+}
+    .car[data-model="bmw"] {
+        background-image: url(../img/bmw.png);
+    }
+    .car[data-model="lambo"] {
+        background-image: url(../img/lambo.png);
+    }
+    .car[data-model="ferrari"] {
+        background-image: url(../img/ferrari.png);
+    }
+    .car[data-model="moscvich"] {
+        background-image: url(../img/moscvich.png);
+    }
+    .car[data-model="tesla"] {
+        background-image: url(../img/tesla.png);
+    }
+    .car::before {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fffc;
+        color: #000;
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .car.car-1 {
+        top: 40vh;
+    }
+        .car.car-1::before {
+            content: 'W';
+        }
+    .car.car-2 {
+        top: 70vh;
+    }
+        .car.car-2::before {
+            content: 'P';
+        }
+
+.line {
+    display: inline-block;
+    width: 50vh;
+    height: 40px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 35vh;
+    left: 190px;
+    transform-origin: top left;
+    border: 5px solid #fff;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+    color: #fff;
+}
+    .line.finish {
+        left: calc(100% - 10px);
+        border-color: red;
+        color: red;
+    }
