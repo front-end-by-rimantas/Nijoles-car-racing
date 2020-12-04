@@ -8,4 +8,4 @@ Description..
 - max 2 players
 
 ## Link
-You can play this game here: [https://front-end-by-rimantas.github.io/19-grupe-car-racing/](https://front-end-by-rimantas.github.io/19-grupe-car-racing/)
+You can play this game here: [https://front-end-by-rimantas.github.io/Nijoles-car-racing/](https://front-end-by-rimantas.github.io/Nijoles-car-racing/)
